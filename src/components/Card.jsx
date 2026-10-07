@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-function Card({nombre,descripcion, button, info}){
+function Card({nombre,descripcion, info}){
     const [estado, setEstado] = useState(false);
     
     return(

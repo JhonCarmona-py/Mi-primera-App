@@ -5,6 +5,22 @@ import Card from "./components/Card";
 
 
 function App(){
+  const info = [{
+      nombre :"diseño web",
+      descripcion:"diseño moderno y atractivo",
+      info:"diseños personalizados con IA a 15% de descuento",
+    },
+     
+     {
+      nombre :"desarrollo de software",
+      descripcion:"desarrollos de software a medida",
+      info:"desarrollos de software a medida para tu negocio",
+     },
+      {
+      nombre:"Marketing digital",
+      descripcion:"estrategias de marketing efectivas",
+      info:"estrategias de marketing efectivas para tu negocio"
+}]
 
 return(
   <div>   
@@ -14,23 +30,16 @@ return(
     <Navbar/>
     
     <Hero/>
-    <section>
-      <Card
-      nombre="diseño web"
-      descripcion="diseño moderno y atractivo"
-      info="diseños personalizados con IA a 15% de descuento"
-      />
-      <Card
-      nombre ="desarrollo de software"
-      descripcion="desarrollos de software a medida"
-      info="desarrollos de software a medida para tu negocio"
-      />
-      <Card
-      nombre="Marketing digital"
-      descripcion="estrategias de marketing efectivas"
-      info="estrategias de marketing efectivas para tu negocio"
-      />
-    </section>
+   <section>
+        {info.map((info) => (
+          <Card
+            key={info.nombre}
+            nombre={info.nombre}
+            descripcion={info.descripcion}
+            info={info.info}
+          />
+        ))}
+      </section>
     <Footer/>
  
     <p>&copy;derechos reservados 2026</p>
