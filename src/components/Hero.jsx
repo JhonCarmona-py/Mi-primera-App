@@ -5,10 +5,10 @@ function Hero(){
     return(
     <section>
         <h1>
-            venta de organos frescos
+            Desarrollo web y marketing digital
         </h1>
 
-        <p>50% de descuento</p>
+        <p>una interfaz utilizando react</p>
 
         <button onClick={click}> comenzar
         </button>

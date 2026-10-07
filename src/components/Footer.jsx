@@ -1,7 +1,7 @@
 function footer(){
     return(
     <footer>
-        <p>Todo a buen precio</p>
+        <p>Mi primera aplicacion con react</p>
     </footer>
     );
 }

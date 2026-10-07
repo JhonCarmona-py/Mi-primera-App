@@ -7,28 +7,33 @@ import Card from "./components/Card";
 function App(){
 
 return(
-  <div>
+  <div>   
+    <h1>
+      Mi pagina web
+    </h1>
     <Navbar/>
+    
     <Hero/>
     <section>
       <Card
       nombre="diseño web"
       descripcion="diseño moderno y atractivo"
+      info="diseños personalizados con IA a 15% de descuento"
       />
       <Card
-      nombre ="electronica"
-      descripcion="diseño moderno y atractivo"
+      nombre ="desarrollo de software"
+      descripcion="desarrollos de software a medida"
+      info="desarrollos de software a medida para tu negocio"
       />
       <Card
-      nombre="Gaming"
-      descripcion="diseño moderno y atractivo"
+      nombre="Marketing digital"
+      descripcion="estrategias de marketing efectivas"
+      info="estrategias de marketing efectivas para tu negocio"
       />
     </section>
     <Footer/>
-    <h1>
-      Mi primera aplicacion con react
-    </h1>
-    <p>Estoy aprendiendo react desde 0</p>
+ 
+    <p>&copy;derechos reservados 2026</p>
   </div>
 );
 }
