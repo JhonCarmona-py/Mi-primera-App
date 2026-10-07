@@ -1,4 +1,7 @@
 function Hero(){
+     function click(){
+        alert("bienvenido a la pagina de venta de organos frescos")
+    }
     return(
     <section>
         <h1>
@@ -7,7 +10,8 @@ function Hero(){
 
         <p>50% de descuento</p>
 
-        <button>Comenzar</button>
+        <button onClick={click}> comenzar
+        </button>
     </section>
     );
 }

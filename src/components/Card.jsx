@@ -1,6 +1,6 @@
 function Card({nombre,descripcion, click}){
     function click(){
-        alert("esta seguro?")
+        alert("esta ingresando a la pagina de " + nombre)
     }
     return(
     <article>

@@ -16,11 +16,11 @@ return(
       descripcion="diseño moderno y atractivo"
       />
       <Card
-      nombre ="diseño web"
+      nombre ="electronica"
       descripcion="diseño moderno y atractivo"
       />
       <Card
-      nombre="diseño web"
+      nombre="Gaming"
       descripcion="diseño moderno y atractivo"
       />
     </section>
