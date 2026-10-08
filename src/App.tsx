@@ -2,6 +2,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
+import Formulario from "./components/Formularios";
+import Usuarios from "./components/Usuarios";
 
 
 function App(){
@@ -30,6 +32,8 @@ return(
     <Navbar/>
     
     <Hero/>
+    <Formulario/>
+    <Usuarios/>
    <section>
         {info.map((info) => (
           <Card
@@ -40,6 +44,7 @@ return(
           />
         ))}
       </section>
+    
     <Footer/>
  
     <p>&copy;derechos reservados 2026</p>
