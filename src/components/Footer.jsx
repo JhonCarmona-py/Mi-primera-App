@@ -5,4 +5,4 @@ function footer(){
     </footer>
     );
 }
-export default footer
+export default footer;
