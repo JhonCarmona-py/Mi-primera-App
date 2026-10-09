@@ -5,12 +5,12 @@ function Hero(){
     return(
     <section>
         <h1>
-            Desarrollo web y marketing digital
+            Bienvenido a mi paginan web 
         </h1>
 
         <p>una interfaz utilizando react</p>
 
-        <button onClick={click}> comenzar
+        <button className="btn btn-success" onClick={click}> comenzar
         </button>
     </section>
     );

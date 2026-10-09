@@ -1,0 +1,25 @@
+/* Encabezado */
+.navbar-personalizado {
+    background-color: #ECDFD2;
+    padding: 15px 30px;
+}
+
+/* Nombre de la página */
+.navbar-personalizado .navbar-brand {
+    color: #5F3475;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Opciones de navegación */
+.navbar-personalizado .nav-link {
+    display: flex;
+    color: #5F3475;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+/* Efecto al pasar el cursor */
+.navbar-personalizado .nav-link:hover {
+    color: #0dcaf0;
+}

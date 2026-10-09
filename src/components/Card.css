@@ -1,0 +1,34 @@
+/* Contenedor de todas las tarjetas */
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 15px;
+    align-items: stretch;
+}
+
+/* Diseño individual de cada tarjeta */
+.Tarjeta {
+    background-color: #ECDFD2;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    flex: 10 0 220px;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+}
+
+/* Título */
+.Tarjeta h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Textos */
+.Tarjeta p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+

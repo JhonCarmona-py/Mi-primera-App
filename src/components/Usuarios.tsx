@@ -9,6 +9,7 @@ type Usuario = {
 
 function Usuarios(){
     const [usuarios, setUsuarios] = useState<Usuario[]>([]);
+    const [estado, setEstado] = useState(false);
 
     useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/users")
@@ -21,10 +22,13 @@ function Usuarios(){
         <section>
             <h2>Usuarios</h2>
             <ul>
-                {usuarios.map((usuario) => (
-                    <li key={usuario.id}>{usuario.name}: {usuario.email}</li>
-                ))}
+                {estado && (<p>{usuarios.map((usuario) => (
+                    <p key={usuario.id}>{usuario.name}: {usuario.email}</p>
+                ))}</p>)}
             </ul>
+            <button className="tarjeta-boton" onClick={() => setEstado(!estado)}>
+                {estado ? " ocultar" : " mostrar"} usuarios
+            </button>
         </section>
     );
 }

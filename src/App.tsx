@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 import Card from "./components/Card";
 import Formulario from "./components/Formularios";
 import Usuarios from "./components/Usuarios";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App(){
   const info = [{
@@ -26,15 +26,14 @@ function App(){
 
 return(
   <div>   
-    <h1>
-      Mi pagina web
-    </h1>
+   
+
     <Navbar/>
     
     <Hero/>
     <Formulario/>
-    <Usuarios/>
-   <section>
+    
+   <section className="contenedor-tarjetas">
         {info.map((info) => (
           <Card
             key={info.nombre}
@@ -44,11 +43,15 @@ return(
           />
         ))}
       </section>
+      <Usuarios/>
     
     <Footer/>
  
     <p>&copy;derechos reservados 2026</p>
   </div>
 );
+
+
 }
+
 export default App;
